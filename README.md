@@ -28,5 +28,8 @@ Implemented by C# .NET 6.
 
 ## version history
 
+### v1.0.1
+Added GenerateId method.
+
 ### v1.0.0
 First Release

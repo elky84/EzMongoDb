@@ -12,7 +12,6 @@ namespace EzMongoDb.Models
         [JsonProperty("_Id")]
         public string Id { get; set; }
 
-
         [BsonDateTimeOptions(Kind = DateTimeKind.Local)]
         public DateTime Created { get; set; } = DateTime.Now;
 
@@ -23,6 +22,12 @@ namespace EzMongoDb.Models
 
     public static class MongoDbHeaderUtil
     {
+        public static string GenerateId(this MongoDbHeader header)
+        {
+            header.Id = ObjectId.GenerateNewId().ToString();
+            return header.Id;
+        }
+
         public static void CopyHeader(this MongoDbHeader source, MongoDbHeader dest)
         {
             dest.Id = source.Id;
