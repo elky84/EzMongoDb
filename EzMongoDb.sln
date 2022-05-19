@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EzMongoDb", "EzMongoDb\EzMongoDb.csproj", "{3DC10993-97D7-49FD-A636-BB62D3418A07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{72C7E035-610A-4253-A0F2-E35F18974119}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DC10993-97D7-49FD-A636-BB62D3418A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC10993-97D7-49FD-A636-BB62D3418A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC10993-97D7-49FD-A636-BB62D3418A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC10993-97D7-49FD-A636-BB62D3418A07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C7E035-610A-4253-A0F2-E35F18974119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C7E035-610A-4253-A0F2-E35F18974119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C7E035-610A-4253-A0F2-E35F18974119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C7E035-610A-4253-A0F2-E35F18974119}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FE52261-320A-45D8-9905-266830F49F57}
+	EndGlobalSection
+EndGlobal
