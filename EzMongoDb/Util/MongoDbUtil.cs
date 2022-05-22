@@ -187,6 +187,8 @@ namespace EzMongoDb.Util
             return Builders<T>.Filter.Eq("_id", ObjectId.Parse(id));
         }
 
+        public void Remove(string id) => Collection.DeleteOne(GetIdFilter(id));
+
         public void Remove(FilterDefinition<T> filter) => Collection.DeleteOne(filter);
 
         public async Task RemoveAsync(string id) => await Collection.DeleteOneAsync(GetIdFilter(id));

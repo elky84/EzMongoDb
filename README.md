@@ -28,6 +28,10 @@ Implemented by C# .NET 6.
 
 ## version history
 
+
+### v1.0.2
+Added Remove by string id method.
+
 ### v1.0.1
 Added GenerateId method.
 
