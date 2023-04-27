@@ -16,18 +16,18 @@ namespace UnitTest
             }
         }
 
-        private IMongoDatabase? Database;
+        private IMongoDatabase? _database;
 
         [SetUp]
         public void Setup()
         {
-            Database = new MongoClient("mongodb://localhost").GetDatabase("testdb");
+            _database = new MongoClient("mongodb://localhost").GetDatabase("testdb");
         }
 
         [Test]
         public async Task Test()
         {
-            var mongoDbUtil = new MongoDbUtil<TestModel>(Database);
+            var mongoDbUtil = new MongoDbUtil<TestModel>(_database);
 
             var testModel = new TestModel();
 

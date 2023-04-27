@@ -9,7 +9,7 @@ namespace EzMongoDb.Util
 {
     public class MongoDbUtil<T> where T : MongoDbHeader
     {
-        public IMongoCollection<T> Collection { get; private set; }
+        private IMongoCollection<T> Collection { get; set; }
 
         public MongoDbUtil(IMongoDatabase database)
         {
@@ -49,6 +49,7 @@ namespace EzMongoDb.Util
         public T FindOne(FilterDefinition<T> filter) =>
             Collection.Find(filter).FirstOrDefault();
 
+        // ReSharper disable once MemberCanBePrivate.Global
         public async Task<T> FindOneAsync(FilterDefinition<T> filter) =>
             await Collection.Find(filter).FirstOrDefaultAsync();
 
@@ -146,6 +147,7 @@ namespace EzMongoDb.Util
             await Collection.UpdateManyAsync(filter, update);
         }
 
+        // ReSharper disable once MemberCanBePrivate.Global
         public async Task<T> UpdateAsync(string id, T t)
         {
             t.Id = id;
