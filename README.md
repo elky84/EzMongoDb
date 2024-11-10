@@ -28,6 +28,10 @@ Implemented by C# .NET 8
 
 ## version history
 
+### v1.0.5
+
+private to public Collection in MongoDbUtil.
+
 ### v1.0.4
 
 In the UpsertAsync function, modify it to call createAction when CreateAsync succeeds.

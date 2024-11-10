@@ -9,7 +9,7 @@ namespace EzMongoDb.Util
 {
     public class MongoDbUtil<T> where T : MongoDbHeader
     {
-        private IMongoCollection<T> Collection { get; set; }
+        public IMongoCollection<T> Collection { get; set; }
 
         public MongoDbUtil(IMongoDatabase database)
         {
