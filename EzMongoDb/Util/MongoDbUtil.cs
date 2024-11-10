@@ -124,14 +124,22 @@ namespace EzMongoDb.Util
             if (origin != null)
             {
                 t.Id = origin.Id;
-                t.Created = t.Created;
+                t.Created = origin.Created;
                 t.Updated = DateTime.Now;
                 return await UpdateAsync(origin.Id, t);
             }
             else
             {
-                createAction?.Invoke(t);
-                return await CreateAsync(t);
+                try
+                {
+                    var createdItem = await CreateAsync(t);
+                    createAction?.Invoke(createdItem);
+                    return createdItem;
+                }
+                catch (Exception ex)
+                {
+                    throw new InvalidOperationException("CreateAsync() Failed (in UpsertAsync)", ex);
+                }
             }
         }
 

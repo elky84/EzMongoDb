@@ -28,6 +28,10 @@ Implemented by C# .NET 8
 
 ## version history
 
+### v1.0.4
+
+In the UpsertAsync function, modify it to call createAction when CreateAsync succeeds.
+
 ### v1.0.3
 Use .NET 8
 
