@@ -28,6 +28,11 @@ Implemented by C# .NET 8
 
 ## version history
 
+### v1.0.6
+
+upgrade to dotnet 9.
+update using packages.
+
 ### v1.0.5
 
 private to public Collection in MongoDbUtil.
