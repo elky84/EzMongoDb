@@ -28,6 +28,10 @@ Implemented by C# .NET 8
 
 ## version history
 
+### v1.0.7
+
+update using Nuget packages.
+
 ### v1.0.6
 
 upgrade to dotnet 9.
